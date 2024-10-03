@@ -65,6 +65,136 @@ body {
   transform: scale(1.1); /* Zoom in on hover */
 }
 
+/* HEADER CSS */
+/* Header container styling */
+header {
+  width: 100%;
+  padding: 11px;
+  background-color: rgb(2, 42, 27); /* Dark background */
+  border-bottom: 2px solid rgb(89, 228, 89); /* Border for separation */
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo h1 {
+  font-size: 24px;
+  color: #dfe1e5;
+  font-weight: 900;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links ul li {
+  margin-left: 20px;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  color: #dfe1e5;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.nav-links ul li a:hover {
+  color: rgb(54, 205, 200);
+}
+
+/* Mobile menu icon (hamburger) */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  color: #dfe1e5;
+  cursor: pointer;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: rgb(30, 121, 90);
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+  }
+
+  .nav-links ul li {
+    margin: 10px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  body {
+    background: linear-gradient(135deg, #67d367, #000000);
+  }
+
+  /* Show the menu when menu-toggle is clicked */
+  .nav-links.active {
+    display: block;
+  }
+}
+
+/*@media only screen and (max-width:600px) {
+  .logo h1 {
+    font-size: 20px;
+  }
+
+  .nav-links ul li a {
+    font-size: 16px;
+    background-color: rgb(8, 96, 63);
+  }
+  body {
+    background: linear-gradient(135deg,  #000000);
+  }
+}*/
+
+/* For smaller devices */
+@media (max-width: 480px) {
+  .logo h1 {
+    font-size: 20px;
+  }
+
+  body {
+    background: linear-gradient(135deg, #67d367);
+  }
+
+  .nav-links ul li a {
+    font-size: 16px;
+    background-color: rgb(8, 96, 63);
+  }
+}
+
 /* Hover effect for text */
 .badge-details h2:hover {
   color: #e8d07e;
@@ -98,7 +228,7 @@ body {
 .download-button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #58a6ff;
+  background-color: mediumaquamarine;
   color: white;
   border: none;
   border-radius: 5px; /* Rounded corners */
@@ -108,7 +238,7 @@ body {
 }
 
 .download-button:hover {
-  background-color: #4183c4; 
+  background-color: mediumspringgreen; 
 }
 
 /*footer {
