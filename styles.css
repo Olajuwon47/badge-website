@@ -51,125 +51,18 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-  height: calc(100vh - 60px); /* Adjust height for footer */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  height: calc(100vh - 60px);
 }
 
 .badge img {
-  width: 250px; /* Adjust image size as needed */
+  width: 250px;
   height: 250px;
   transition: transform 0.3s ease; /* Smooth transition */
 }
 
 .badge img:hover {
   transform: scale(1.1); /* Zoom in on hover */
-}
-
-/* HEADER CSS */
-/* Header container styling */
-header {
-  width: 100%;
-  padding: 15px;
-  background-color: rgb(3, 37, 24); /* Dark background */
-  border-bottom: 2px solid rgb(68, 230, 176); /* Border for separation */
-}
-
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-.logo img {
-  width: 40px;
-  height: 40px;
-  margin-right: 10px;
-}
-
-.logo h1 {
-  font-size: 24px;
-  color: #dfe1e5;
-  font-weight: 900;
-}
-
-.nav-links ul {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-links ul li {
-  margin-left: 20px;
-}
-
-.nav-links ul li a {
-  text-decoration: none;
-  color: #dfe1e5;
-  font-size: 18px;
-  transition: color 0.3s ease;
-}
-
-.nav-links ul li a:hover {
-  color: #58a6ff;
-}
-
-/* Mobile menu icon (hamburger) */
-.menu-toggle {
-  display: none;
-  font-size: 24px;
-  color: #dfe1e5;
-  cursor: pointer;
-}
-
-/* Mobile Responsive Styles */
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-    position: absolute;
-    top: 70px;
-    right: 0;
-    background-color: #1c1f24;
-    width: 100%;
-    text-align: center;
-    transition: all 0.3s ease;
-  }
-
-  .nav-links ul {
-    flex-direction: column;
-  }
-
-  .nav-links ul li {
-    margin: 10px 0;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
-  /* Show the menu when menu-toggle is clicked */
-  .nav-links.active {
-    display: block;
-  }
-}
-
-/* For smaller devices */
-@media (max-width: 480px) {
-  .logo h1 {
-    font-size: 20px;
-  }
-
-  .nav-links ul li a {
-    font-size: 16px;
-  }
 }
 
 /* Hover effect for text */
@@ -205,23 +98,17 @@ header {
 .download-button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #58a6ff; /* Button background color */
-  color: white; /* Button text color */
+  background-color: #58a6ff;
+  color: white;
   border: none;
- cursor: pointer;
-  border-radius: 20px; /* Rounded corners */
+  border-radius: 5px; /* Rounded corners */
   text-decoration: none; /* Remove underline */
   font-weight: bold; /* Bold text */
   transition: background-color 0.3s ease; /* Transition effect */
 }
 
-.qr-download-card{
-  margin-top: 15px;
-}
-
 .download-button:hover {
-  background-color:  rgb(80, 167, 119);
-  transform: scale(1.2); 
+  background-color: #4183c4; 
 }
 
 /*footer {
@@ -316,4 +203,11 @@ footer a{
 /* Adding smooth hover effects */
 .share-button:hover {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.footer-text{
+  /* margin-bottom: 15px;
+  padding-bottom: 25px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
